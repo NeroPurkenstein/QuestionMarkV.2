@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.uncannyvalley_demo.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\Users\\Lisanne\\Documents\\GitHub\\QuestionMark\\UncannyValley_Demo\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "UncannyValley_Demo [Testing]"
+        }
+      }
+    }
+  ]
+}
