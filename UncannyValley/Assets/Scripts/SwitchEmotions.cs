@@ -10,18 +10,18 @@ public class SwitchEmotions : MonoBehaviour
     //Only one of the emotions is visible
     void Start()
     {
-        emotions[0].SetActive(true);
+        emotions[0].GetComponent<Renderer>().enabled = true;//SetActive(true);
         for (int x = 1; x < 5; x++)
         {
-            emotions[x].SetActive(false);
+            emotions[x].GetComponent<Renderer>().enabled = false;//SetActive(false);
         }
     }
 
     //turns off seen emotion and turns the next one visible
     public void Next()
     {
-        emotions[i].SetActive(false);
-        if (i == 5)
+        emotions[i].GetComponent<Renderer>().enabled = false; //SetActive(false);
+        if (i == 4)
         {
             i = 0;
         }
@@ -29,21 +29,21 @@ public class SwitchEmotions : MonoBehaviour
         {
             i++;
         }
-        emotions[i].SetActive(true);
+        emotions[i].GetComponent<Renderer>().enabled = true; //SetActive(true);
     }
 
     //turns off seen emotion and turns the previous one visible
     public void Previous()
     {
-        emotions[i].SetActive(false);
+        emotions[i].GetComponent<Renderer>().enabled = false;
         if (i == 0)
         {
-            i = 5;
+            i = 4;
         }
         else
         {
             i--;
         }
-        emotions[i].SetActive(true);
+        emotions[i].GetComponent<Renderer>().enabled = true;
     }
 }
