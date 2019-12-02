@@ -5,20 +5,27 @@ using UnityEngine;
 public class ChangeDistance : MonoBehaviour
 {
     public GameObject EmotionsDisplay;
-    float ZValue= 0.9200001f;
+    private float ZValue= 0.9200001f;
+    private Vector3 NewPosition;
     // Start is called before the first frame update
     void Start()
     {
-        
+        NewPosition = new Vector3(0.02f, 0.5f, ZValue);
+      
     }
 
-    // Update is called once per frame
+   
     public void Closer()
     {
-        //if (ZValue <= -0.249f)
-        
+        if (ZValue >= -0.09504139f)
+        {
             EmotionsDisplay.transform.Translate(Vector3.back * Time.deltaTime);
-        
+           
+        }
+        else
+        {
+            Debug.Log("too close");
+        }
 }
     public void Away()
     {
@@ -27,4 +34,5 @@ public class ChangeDistance : MonoBehaviour
             EmotionsDisplay.transform.Translate(Vector3.forward * Time.deltaTime);
         
     }
+
 }
