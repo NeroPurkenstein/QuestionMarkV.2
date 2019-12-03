@@ -6,18 +6,18 @@ public class SwitchEmotions : MonoBehaviour
 {
     public GameObject[] emotions;
     private int i = 0;
-    private bool isPressed = false;
+    private bool isPressed = true;
 
     //Only one of the emotions is visible
     void Start()
     {
         emotions[0].GetComponent<Renderer>().enabled = true;//SetActive(true);
-        for (int x = 1; x <= 5; x++)
+        for (int x = 1; x <= 4; x++)
         {
-            if (x < emotions.Length)
-            {
+            //if (x < emotions.Length)
+            //{
                 emotions[x].GetComponent<Renderer>().enabled = false;//SetActive(false);
-            }
+            //}
         }
     }
 
