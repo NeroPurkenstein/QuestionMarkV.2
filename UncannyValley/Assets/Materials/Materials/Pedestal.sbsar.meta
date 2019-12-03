@@ -16,7 +16,8 @@ ScriptedImporter:
     generateAllOutputs: 0
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://Pedestal\" label=\"\" >\n  <presetinput identifier=\"$outputsize\"
-      uid=\"3248949264\" type=\"8\" value=\"9,9\" />\n </sbspreset>\n"
+      uid=\"3248949264\" type=\"8\" value=\"9,9\" />\n  <presetinput identifier=\"intensityNormal\"
+      uid=\"2867972816\" type=\"0\" value=\"1.1\" />\n </sbspreset>\n"
     shaderName: Standard
     materialProperties:
       shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
@@ -42,12 +43,12 @@ ScriptedImporter:
         offset: {x: 0, y: 0}
       - name: _EmissionMap
         texture: {instanceID: 0}
-        scale: {x: 1, y: 1}
+        scale: {x: 3, y: 2}
         offset: {x: 0, y: 0}
       - name: _MainTex
         texture: {fileID: 389985168500926197, guid: 6fdbab7d18d036640b824563594f7d5f,
           type: 3}
-        scale: {x: 1, y: 1}
+        scale: {x: 3, y: 2}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
         texture: {fileID: 2184162347433667164, guid: 6fdbab7d18d036640b824563594f7d5f,
