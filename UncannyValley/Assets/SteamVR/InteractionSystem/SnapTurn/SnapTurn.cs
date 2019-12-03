@@ -55,6 +55,9 @@ namespace Valve.VR.InteractionSystem
         private void Update()
         {
             Player player = Player.instance;
+            if (player == null) return;
+            if (player.leftHand == null) return;
+            if (player.rightHand == null) return;
 
             if (canRotate && snapLeftAction != null && snapRightAction != null && snapLeftAction.activeBinding && snapRightAction.activeBinding)
             {

@@ -14,7 +14,10 @@ public class SwitchEmotions : MonoBehaviour
         emotions[0].GetComponent<Renderer>().enabled = true;//SetActive(true);
         for (int x = 1; x <= 5; x++)
         {
-            emotions[x].GetComponent<Renderer>().enabled = false;//SetActive(false);
+            if (x < emotions.Length)
+            {
+                emotions[x].GetComponent<Renderer>().enabled = false;//SetActive(false);
+            }
         }
     }
 
